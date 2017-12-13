@@ -7,6 +7,11 @@
 #include <gl/GL.h> 
  #include <gl/GLU.h> 
 
+
+//@Author Sean Nash
+//@Login C00217019
+//Open GL Assignment
+
 using namespace std;
 using namespace sf;
 
@@ -24,8 +29,7 @@ private:
 	void draw();
 	void unload();
 
-	// // Uncomment for Part 2
-	// // ********************
+	
 	 const int primatives;
 
 	GLuint index;
@@ -33,5 +37,5 @@ private:
 	Time elapsed;
 
 	float rotationAngle = 0.0f;
-	// // ********************
+	
 };

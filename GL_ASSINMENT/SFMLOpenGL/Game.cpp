@@ -1,18 +1,22 @@
 #include <Game.h>
 
-// // Uncomment for Part 2
-// // ********************
+//@Author Sean Nash
+//@Login C00217019
+//Open GL Assignment
+
+
 bool flip = false;
 int current = 1;
-// // ********************
+
+
 
 
   Game::Game() : window(VideoMode(800, 600), "OpenGL"), primatives(2)
   {
-	// // Uncomment for Part 2
-	// // ********************
+	
 	 index = glGenLists(primatives);
-	// // ********************
+
+
 }
 Game::~Game() {}
 
@@ -45,8 +49,7 @@ void Game::initialize()
 {
 	isRunning = true;
 
-	// // Uncomment for Part 2
-	// // ********************
+
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -75,16 +78,13 @@ void Game::initialize()
 	}
 	glEnd();
 	glEndList();
-
-	// // Uncomment for Part 2
-	// // ********************
+	
 }
 
 void Game::update()
 {
 
-	// // Uncomment for Part 2
-	// // ********************
+
 	elapsed = clock.getElapsedTime();
 
 	//glScalef(0.95f, 0.95f, 1.0f);
@@ -217,19 +217,14 @@ void Game::draw()
 
 
 
-
-	// // Uncomment for Part 2
-	// // ********************
 	cout << "Draw up" << endl;
 
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	//Investigate Here!!!!!
 
 	cout << "Drawing Primative " << current << endl;
 	glCallList(current);
-	// // Uncomment for Part 2
-	// // ********************
+	=
 
 
 
